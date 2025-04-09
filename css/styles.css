@@ -1,5 +1,6 @@
 :root{
   --color-background:radial-gradient(circle at top, #1F3757, #131537);
+  --position-game: absolute;
 }
 * {
   box-sizing: border-box;
@@ -26,17 +27,25 @@ nav ul {
 }
 
 body {
-  margin: 0;
+  margin-top: 50px;
   font-family: sans-serif;
   background: var(--color-background);
   background-size:contain;
   display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  gap: 100px;
+  font-family: sans-serif;
+  color: aliceblue;
+}
+.game-container{
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
 }
-
 .menu{
   display: flex;
   flex-direction: row;
@@ -64,4 +73,92 @@ body {
   height: 30px;
   cursor: pointer;
 }
+
+/* simple game */
+
+/* score */
+
+.header{
+  font-size: 28px;
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  border: solid 2px white;
+  padding: 40px 100px 40px 100px;
+  border-radius: 10px;
+  align-items: center;
+}
+.score{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: lighter;
+  gap: 10px;
+
+}
+
+.game-name{
+  width: 70px;
+  align-items: center;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+}
+
+/* jugada */
+
+.game-container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 340px;
+    height: 540px;
+margin: 0;
+background-image: url(../assets/bg-triangle.svg);
+background-position: center;
+background-size: 100%;
+background-repeat: no-repeat;
+}
+
+.game{
+  position: relative;
+  width: 340px;
+  height: 540px;
+  margin: 0;
+}
+
+.game-item{
+  background-color: white;
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+  align-content: center;
+  justify-items: center;
+}
+
+.rock{
+  content: '';
+  position: absolute;
+  left: 270px;
+  top:80px;
+  border: solid 10px rgb(18, 187, 18);
+}
+.paper{
+  content: '';
+  position: absolute;
+  left:120px;
+  top:340px;
+  border: solid 10px rgb(204, 19, 204);
+}
+.scissors{
+  content: '';
+  position: absolute;
+  left: -10px;
+  top:80px;
+  border: solid 10px rgb(255, 174, 22);
+}
+
+
+
 
