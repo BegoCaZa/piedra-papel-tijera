@@ -107,13 +107,13 @@ body {
 
 /* jugada */
 
-.game-container{
+.items-container{
   position: relative;
   display: flex;
   flex-direction: column;
   align-content: center;
   width: 340px;
-    height: 540px;
+height: 540px;
 margin: 0;
 background-image: url(../assets/bg-triangle.svg);
 background-position: center;
@@ -135,29 +135,72 @@ background-repeat: no-repeat;
   height: 100px;
   align-content: center;
   justify-items: center;
+  cursor: pointer;
+}
+
+.game-icon{
+  pointer-events: none;
 }
 
 .rock{
-  content: '';
   position: absolute;
   left: 270px;
   top:80px;
   border: solid 10px rgb(18, 187, 18);
 }
+
+.rock{
+  border: solid 10px rgb(18, 187, 18);
+}
+
 .paper{
-  content: '';
   position: absolute;
   left:120px;
   top:340px;
   border: solid 10px rgb(204, 19, 204);
 }
+
+
 .scissors{
-  content: '';
   position: absolute;
   left: -10px;
   top:80px;
   border: solid 10px rgb(255, 174, 22);
 }
+
+.scissors{
+  border: solid 10px rgb(255, 174, 22);
+}
+
+.results{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.paper-result{
+  border: solid 10px rgb(204, 19, 204);
+}
+
+.scissors-result{
+  border: solid 10px rgb(204, 19, 204);
+}
+.rock-result{
+  border: solid 10px rgb(255, 174, 22)
+}
+
+.pc-paper-result{
+  border: solid 10px rgb(204, 19, 204);
+}
+
+.pc-scissors-result{
+  border: solid 10px rgb(255, 174, 22)
+}
+
+.pc-rock-result{
+  border: solid 10px rgb(18, 187, 18);
+}
+
 
 
 

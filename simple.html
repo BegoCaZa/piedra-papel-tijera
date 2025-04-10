@@ -23,7 +23,7 @@
         </div>
     </header>
     <!-- juego -->
-    <div class="game-container"> 
+    <div class="items-container"> 
     <div class="game" id="game">
         <div class="game-item paper" data-item="paper">
             <img src="./assets/icon-paper.svg" alt='paper icon' class="game-icon">
@@ -38,41 +38,30 @@
     </div>
     <!-- resultados -->
      <div id="results" class="results hide">
-        <!-- resultado papel //asignar clases bien// class="game-item paper hide" class="game-item scissors hide" class="game-item rock hide"-->
-        <div id="picked-paper" >
+        <!-- resultado papel //asignar clases bien-->
+        <div id="picked-result" >
             <span>YOUR PICK</span>
-                <img src="./assets/icon-paper.svg" alt='paper icon' class="game-icon">
-        </div>
-        <!-- resultado tijera -->
-        <div id="picked-scissors">
-            <span>YOUR PICK</span>
-                <img src="./assets/icon-scissors.svg" alt='scissors icon' class="game-icon">
-        </div>
-
-        <!-- resultado piedra -->
-        <div id="picked-rock" >
-            <span>YOUR PICK</span>
-                <img src="./assets/icon-rock.svg" alt='rock icon' class="game-icon">
+            <div class="game-item paper-result" id="result-item"> 
+                <img src="./assets/icon-paper.svg" alt='result icon' class="game-icon">
+            </div>
         </div>
 
         <div>
             <span>GAME RESULT</span>
         </div>
-        <div>
+
+         <div id="pc-result" >
             <span>PC PICK</span>
+            <div class="game-item pc-paper-result" id="pc-result-item"> 
+                <img src="./assets/icon-paper.svg" alt='result icon' class="game-icon">
+            </div>
         </div>
      </div>
      <!-- play again -->
       <button>PLAY again</button>
 
-
-    <main class="game">
-        <div id="game" class="">
-
-        </div>
-    </main>
     <footer>
-    <a href="home.html">
+    <a href="index.html">
           <button class="button-menu">HOME</button>
       </a>
     </footer>
