@@ -24,6 +24,9 @@ let userPlay = '';
 let pcPlay = '';
 // let pcPlayPicked = '';
 const playOptions = ['rock', 'paper', 'scissors'];
+let pcWins=0;
+  let userWins=0;
+  let tie=0;
 
 //REGLAS
 const rules = {
@@ -45,15 +48,20 @@ const rules = {
 //comparacion
 const compareResults = () => {
   // let userWins=(rules.userPlay[pcPlay]=true);
+  
  
   if (userPlay === pcPlay) {
     console.log('TIE');
+    tie +=1;
+    userScoreElement.textContent = tie;
   }else if (rules[userPlay][pcPlay]) { 
     console.log('USER WINS');
-    userScoreElement.textContent++;
+    userWins +=1;
+    userScoreElement.textContent= userWins;
   } else {
     console.log('PC WINS');
-    pcScoreElement.textContent++;
+    pcWins +=1;
+    pcScoreElement.textContent= pcWins;
   }
 };
 
