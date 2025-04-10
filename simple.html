@@ -39,30 +39,28 @@
     <!-- resultados -->
      <div id="results" class="results hide">
         <!-- resultado papel //asignar clases bien-->
-        <div id="picked-result" >
-            <span>YOUR PICK</span>
-            <div class="game-item paper-result" id="result-item"> 
-                <img src="./assets/icon-paper.svg" alt='result icon' class="game-icon">
-            </div>
-        </div>
-
-        <div>
+        <div class="result-title">
             <span>GAME RESULT</span>
         </div>
 
-         <div id="pc-result" >
-            <span>PC PICK</span>
-            <div class="game-item pc-paper-result" id="pc-result-item"> 
-                <img src="./assets/icon-paper.svg" alt='result icon' class="game-icon">
-            </div>
+        <div class="results-container">   
+        <div id="picked-result" class="picked-result" >
+            <span>YOUR PICK</span>
+            <div class="game-item paper-result" id="result-item"> </div>
         </div>
+
+         <div id="pc-result" class="picked-result">
+            <span>PC PICK</span>
+            <div class="game-item pc-paper-result" id="pc-result-item"> </div>
+        </div>
+    </div>
      </div>
      <!-- play again -->
-      <button>PLAY again</button>
+      <button class="button">PLAY again</button>
 
     <footer>
     <a href="index.html">
-          <button class="button-menu">HOME</button>
+          <button class="button">HOME</button>
       </a>
     </footer>
     <script src="./js/scripts.js"></script>

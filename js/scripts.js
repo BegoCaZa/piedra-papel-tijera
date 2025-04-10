@@ -13,6 +13,12 @@ const rootStyles = document.documentElement.style;
 //ATRIBUTOS DATA
 const gameOptionsElement = document.getElementById('game');
 
+//ATRIBUTOS INPUT
+const resultsElement = document.getElementById('results');
+const userScoreElement = document.getElementById('user-score');
+const pcScoreElement = document.getElementById('pc-score');
+
+
 //VARIABLE GLOBALES
 let userPlay = '';
 let pcPlay = '';
@@ -24,14 +30,30 @@ const rules = {
   rock: {
     paper: false,
     scissors: true
+  },
+  paper: {
+    scissors: false,
+    rock: true
+  },
+  scissors: {
+    rock: false,
+    paper: true
   }
 };
 
 //FUNCIONES
 //comparacion
 const compareResults = () => {
+  // let userWins=(rules.userPlay[pcPlay]=true);
+ 
   if (userPlay === pcPlay) {
     console.log('TIE');
+  }else if (rules[userPlay][pcPlay]) { 
+    console.log('USER WINS');
+    userScoreElement.textContent++;
+  } else {
+    console.log('PC WINS');
+    pcScoreElement.textContent++;
   }
 };
 
