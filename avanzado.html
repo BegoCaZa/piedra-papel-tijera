@@ -7,9 +7,65 @@
     <title>PPT Avanzado</title>
   </head>
   <body>
+    <header class="header" >
+        <div class="score">
+            <span>YOU</span> 
+            <span id="user-score" class="points">0</span>
+        </div>
+        <div class="game-name">
+            <span class="title">ROCK</span>
+            <span class="title">PAPER</span>
+            <span class="title">SCISSORS</span>
+        </div>
+        <div class="score">
+            <span>PC</span>
+            <span id="pc-score" class="points">0</span>
+        </div>
+    </header>
+    <!-- juego -->
+    <div class="items-container" id="game-container"> 
+    <div class="game" id="game">
+        <div class="game-item paper" data-item="paper">
+            <img src="./assets/icon-paper.svg" alt='paper icon' class="game-icon">
+        </div>
+        <div class="game-item scissors" data-item="scissors">
+            <img src="./assets/icon-scissors.svg" alt='scissors icon' class="game-icon">
+        </div>
+        <div class="game-item rock" data-item="rock">
+            <img src="./assets/icon-rock.svg" alt='rock icon' class="game-icon">
+        </div>
+    </div>
+    </div>
+    <!-- resultados -->
+     <div id="results" class="results hide">
+        <!-- resultado papel //asignar clases bien-->
+        <div class="result-title">
+            <span>GAME RESULT</span>
+        </div>
+        <div class="result-subtitle" id="result-subtitle">
+            <span>YOU WIN</span>
+        </div>
+
+        <div class="results-container">   
+        <div id="picked-result" class="picked-result" >
+            <span>YOUR PICK</span>
+            <div class="game-item paper-result" id="result-item"> </div>
+        </div>
+
+         <div id="pc-result" class="picked-result">
+            <span>PC PICK</span>
+            <div class="game-item pc-paper-result" id="pc-result-item"> </div>
+        </div>
+    </div>
+     <!-- play again -->
+     <button class="button" id="play-again-button">PLAY again</button>
+     </div>
+
+    <footer>
     <a href="index.html">
-        <button class="button-menu">HOME</button>
-    </a>
+          <button class="button">HOME</button>
+      </a>
+    </footer>
     <script src="./js/scripts.js"></script>
   </body>
 </html>

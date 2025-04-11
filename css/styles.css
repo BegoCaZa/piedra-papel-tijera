@@ -27,10 +27,11 @@ nav ul {
 }
 
 body {
-  margin-top: 50px;
+margin: 0;
   font-family: sans-serif;
   background: var(--color-background);
-  background-size:contain;
+  background-size:cover;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -38,6 +39,11 @@ body {
   min-height: 100vh;
   font-family: sans-serif;
   color: aliceblue;
+}
+
+.home-title{
+  margin-top: 100px;
+  margin-bottom: 200px;
 }
 .game-container{
   display: flex;
@@ -63,6 +69,13 @@ body {
   height: 300px;
 }
 
+.footer{
+  position: absolute;
+  bottom: 100px;
+  display: flex;
+  flex-direction: row;
+  gap: 300px;
+}
 .button{
   background: transparent;
   color: aliceblue;
@@ -87,6 +100,7 @@ body {
   padding: 40px 100px 40px 100px;
   border-radius: 10px;
   align-items: center;
+  margin-top: 100px;
 }
 .score{
   display: flex;
@@ -204,7 +218,7 @@ background-repeat: no-repeat;
   border-radius: 10px;
   padding: 20px 80px 40px 80px;
   width: 500px;
-  margin-top: 50px;
+  margin-top: 100px;
 
 }
 .hide{
@@ -293,7 +307,6 @@ background-repeat: no-repeat;
   background-size: 50%;
   background-repeat: no-repeat;
 }
-
 
 
 
