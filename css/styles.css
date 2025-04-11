@@ -71,6 +71,7 @@ body {
   width: 150px;
   height: 30px;
   cursor: pointer;
+  margin-top: 30px;
 }
 
 /* simple game */
@@ -92,9 +93,22 @@ body {
   flex-direction: column;
   align-items: center;
   font-weight: lighter;
-  gap: 10px;
-
+  justify-content: center;
+  background-color: white;
+  color: #101358;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  width: 120px;
+  height:110px;
 }
+
+.points{
+  font-size: 50px;
+  color: #797979;
+}
+
+
 
 .game-name{
   width: 70px;
@@ -185,24 +199,42 @@ background-repeat: no-repeat;
 .results{
   display: flex;
   flex-direction: column;
+  align-items: center;
   border: solid 2px white;
   border-radius: 10px;
   padding: 20px 80px 40px 80px;
   width: 500px;
+  margin-top: 50px;
 
+}
+.hide{
+  display: none;
 }
 
 .result-title{
   font-size: 30px;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+.result-subtitle{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  border: none;
+  color: #131537;
+  padding: 10px 20px 10px 20px;
 }
 
 .results-container{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 100px;
 }
 
 .picked-result{
@@ -224,14 +256,14 @@ background-repeat: no-repeat;
 }
 
 .scissors-result{
-  border: solid 10px rgb(204, 19, 204);
+  border: solid 10px rgb(255, 174, 22);
   background-image: url(../assets/icon-scissors.svg);
   background-position: center;
   background-size: 50%;
   background-repeat: no-repeat;
 }
 .rock-result{
-  border: solid 10px rgb(255, 174, 22);
+  border: solid 10px rgb(18, 187, 18);
   background-image: url(../assets/icon-rock.svg);
   background-position: center;
   background-size: 50%;
