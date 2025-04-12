@@ -43,7 +43,7 @@ margin: 0;
 
 .home-title{
   margin-top: 100px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 .game-container{
   display: flex;
@@ -71,7 +71,7 @@ margin: 0;
 
 .footer{
   position: absolute;
-  bottom: 100px;
+  bottom: 10px;
   display: flex;
   flex-direction: row;
   gap: 300px;
@@ -97,10 +97,10 @@ margin: 0;
   flex-direction: row;
   gap: 80px;
   border: solid 2px white;
-  padding: 40px 100px 40px 100px;
+  padding: 20px 100px 20px 100px;
   border-radius: 10px;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 30px;
 }
 .score{
   display: flex;
@@ -147,11 +147,24 @@ background-position: center;
 background-size: 100%;
 background-repeat: no-repeat;
 }
+.items-container-advanced{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 340px;
+/* height: 540px; */
+margin: 0;
+background-image: url(../assets/bg-pentagon.svg);
+background-position: center;
+background-size: 100%;
+background-repeat: no-repeat;
+}
 
 .game{
   position: relative;
   width: 340px;
-  height: 540px;
+  height: 450px;
   margin: 0;
 }
 
@@ -183,6 +196,20 @@ background-repeat: no-repeat;
   box-shadow: 0 0 20px 10px rgba(18, 187, 18, 0.6);
 }
 
+.rock-advanced {
+  position: absolute;
+  left: 270px;
+  top: 120px;
+  border: solid 10px rgb(18, 187, 18);
+  
+}
+
+.rock-advanced:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 0 0 20px 10px rgba(18, 187, 18, 0.6);
+}
+
 
 .paper{
   position: absolute;
@@ -191,6 +218,18 @@ background-repeat: no-repeat;
   border: solid 10px rgb(204, 19, 204);
 }
 .paper:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 0 0 20px 10px rgba(204, 19, 204, 0.6);
+}
+
+.paper-advanced{
+  position: absolute;
+  left:30px;
+  top:330px;
+  border: solid 10px rgb(204, 19, 204);
+}
+.paper-advanced:hover {
   transform: scale(1.2);
   transition: transform 0.2s ease-in-out;
   box-shadow: 0 0 20px 10px rgba(204, 19, 204, 0.6);
@@ -208,7 +247,41 @@ background-repeat: no-repeat;
   transition: transform 0.2s ease-in-out;
   box-shadow: 0 0 20px 10px rgba(255, 174, 22, 0.6);
 }
+.scissors-advanced{
+  position: absolute;
+  left: -15px;
+  top:120px;
+  border: solid 10px rgb(255, 174, 22);
+}
+.scissors-advanced:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 0 0 20px 10px rgba(255, 174, 22, 0.6);
+}
 
+.lizzard{
+  position: absolute;
+  left: 120px;
+  top:30px;
+  border: solid 10px rgb(255, 22, 22);
+}
+.lizzard:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 0 0 20px 10px rgba(255, 22, 22, 0.6);
+}
+
+.spock{
+  position: absolute;
+  left: 200px;
+  top: 330px;
+  border: solid 10px rgb(22, 220, 255);
+}
+.spock:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 0 0 20px 10px rgba(22, 220, 255, 0.6);
+}
 
 .results{
   display: flex;
@@ -218,7 +291,7 @@ background-repeat: no-repeat;
   border-radius: 10px;
   padding: 20px 80px 40px 80px;
   width: 500px;
-  margin-top: 100px;
+  margin-top: 40px;
 
 }
 .hide{

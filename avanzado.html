@@ -16,6 +16,8 @@
             <span class="title">ROCK</span>
             <span class="title">PAPER</span>
             <span class="title">SCISSORS</span>
+            <span class="title">LIZZARD</span>
+            <span class="title">SPOCK</span>
         </div>
         <div class="score">
             <span>PC</span>
@@ -23,16 +25,22 @@
         </div>
     </header>
     <!-- juego -->
-    <div class="items-container" id="game-container"> 
+    <div class="items-container-advanced" id="game-container"> 
     <div class="game" id="game">
-        <div class="game-item paper" data-item="paper">
+        <div class="game-item paper-advanced" data-item="paper">
             <img src="./assets/icon-paper.svg" alt='paper icon' class="game-icon">
         </div>
-        <div class="game-item scissors" data-item="scissors">
+        <div class="game-item scissors-advanced" data-item="scissors">
             <img src="./assets/icon-scissors.svg" alt='scissors icon' class="game-icon">
         </div>
-        <div class="game-item rock" data-item="rock">
+        <div class="game-item rock-advanced" data-item="rock">
             <img src="./assets/icon-rock.svg" alt='rock icon' class="game-icon">
+        </div>
+        <div class="game-item lizzard" data-item="lizzard">
+            <img src="./assets/icon-lizard.svg" alt='lizzard icon' class="game-icon">
+        </div>
+        <div class="game-item spock" data-item="spock">
+            <img src="./assets/icon-spock.svg" alt='spock icon' class="game-icon">
         </div>
     </div>
     </div>
@@ -61,10 +69,12 @@
      <button class="button" id="play-again-button">PLAY again</button>
      </div>
 
-    <footer>
+
+    <footer class="footer">
     <a href="index.html">
           <button class="button">HOME</button>
       </a>
+      <button class="button">RULES</button>
     </footer>
     <script src="./js/scripts.js"></script>
   </body>
