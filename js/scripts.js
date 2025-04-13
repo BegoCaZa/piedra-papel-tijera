@@ -28,6 +28,7 @@ const resultSubtitleElement = document.getElementById('result-subtitle');
 let userPlay = '';
 let pcPlay = '';
 // let pcPlayPicked = '';
+let advancedMode = false; // Cambia a true si quieres jugar con lizard y spock
 const playOptions = ['rock', 'paper', 'scissors'];
 let pcWins = 0;
 let userWins = 0;
@@ -35,22 +36,6 @@ let tie = 0;
 
 //REGLAS
 const rules = {
-  rock: {
-    paper: false,
-    scissors: true
-  },
-  paper: {
-    scissors: false,
-    rock: true
-  },
-  scissors: {
-    rock: false,
-    paper: true
-  }
-};
-
-//REGLAS AVANZADO
-const rulesAdvanced = {
   rock: {
     scissors: true,   
     lizard: true,     
@@ -134,6 +119,12 @@ const playPick = event => {
 
   pcPicked();
 };
+
+// const playModePick=()=>{
+//   if(advancedMode===true){
+//     playOptions.push('lizard', 'spock')
+// }
+// }
 
 gameOptionsElement.addEventListener('click', playPick);
 playAgainButton.addEventListener('click', playAgain);

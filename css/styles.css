@@ -259,13 +259,13 @@ background-repeat: no-repeat;
   box-shadow: 0 0 20px 10px rgba(255, 174, 22, 0.6);
 }
 
-.lizzard{
+.lizard{
   position: absolute;
   left: 120px;
   top:30px;
   border: solid 10px rgb(255, 22, 22);
 }
-.lizzard:hover {
+.lizard:hover {
   transform: scale(1.2);
   transition: transform 0.2s ease-in-out;
   box-shadow: 0 0 20px 10px rgba(255, 22, 22, 0.6);
@@ -357,6 +357,21 @@ background-repeat: no-repeat;
   background-repeat: no-repeat;
 }
 
+.lizard-result{
+  border: solid 10px rgb(255, 22, 22);
+  background-image: url(../assets/icon-lizard.svg);
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+.spock-result{
+  border: solid 10px rgb(22, 220, 255);
+  background-image: url(../assets/icon-spock.svg);
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+
 .pc-paper-result{
   border: solid 10px rgb(204, 19, 204);
   background-image: url(../assets/icon-paper.svg);
@@ -376,6 +391,21 @@ background-repeat: no-repeat;
 .pc-rock-result{
   border: solid 10px rgb(18, 187, 18);
   background-image: url(../assets/icon-rock.svg);
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+
+.pc-lizard-result{
+  border: solid 10px rgb(255, 22, 22);
+  background-image: url(../assets/icon-lizard.svg);
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+.pc-spock-result{
+  border: solid 10px rgb(22, 220, 255);
+  background-image: url(../assets/icon-spock.svg);
   background-position: center;
   background-size: 50%;
   background-repeat: no-repeat;
