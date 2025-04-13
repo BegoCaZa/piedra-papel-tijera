@@ -12,6 +12,7 @@ const rootStyles = document.documentElement.style;
 
 //ATRIBUTOS DATA
 const gameOptionsElement = document.getElementById('game');
+// const advancedModeElement = document.getElementById('advanced-mode'); //detecta que es avanzado
 
 //ATRIBUTOS INPUT
 const resultsElement = document.getElementById('results');
@@ -28,7 +29,7 @@ const resultSubtitleElement = document.getElementById('result-subtitle');
 let userPlay = '';
 let pcPlay = '';
 // let pcPlayPicked = '';
-let advancedMode = false; // Cambia a true si quieres jugar con lizard y spock
+
 const playOptions = ['rock', 'paper', 'scissors'];
 let pcWins = 0;
 let userWins = 0;
@@ -120,11 +121,18 @@ const playPick = event => {
   pcPicked();
 };
 
-// const playModePick=()=>{
-//   if(advancedMode===true){
-//     playOptions.push('lizard', 'spock')
-// }
-// }
+
+//modo avanzado
+let advancedMode = false;
+if(document.getElementById('advanced-mode')){
+  advancedMode = true;
+  playOptions.push('lizard', 'spock');
+  console.log('Advanced mode activated');
+  console.log(playOptions);
+}else{
+  console.log('Simple mode deactivated');
+  console.log(playOptions);
+}
 
 gameOptionsElement.addEventListener('click', playPick);
 playAgainButton.addEventListener('click', playAgain);
