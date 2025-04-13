@@ -49,6 +49,40 @@ const rules = {
   }
 };
 
+//REGLAS AVANZADO
+const rulesAdvanced = {
+  rock: {
+    scissors: true,   
+    lizard: true,     
+    paper: false,
+    spock: false
+  },
+  paper: {
+    rock: true,       
+    spock: true,      
+    scissors: false,
+    lizard: false
+  },
+  scissors: {
+    paper: true,      
+    lizard: true,     
+    rock: false,
+    spock: false
+  },
+  lizard: {
+    spock: true,      
+    paper: true,      
+    rock: false,
+    scissors: false
+  },
+  spock: {
+    scissors: true,   
+    rock: true,       
+    paper: false,
+    lizard: false
+  }
+};
+
 //FUNCIONES
 //comparacion
 const showResults = () => {
