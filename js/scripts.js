@@ -38,32 +38,32 @@ let tie = 0;
 //REGLAS
 const rules = {
   rock: {
-    scissors: true,   
-    lizard: true,     
+    scissors: true,
+    lizard: true,
     paper: false,
     spock: false
   },
   paper: {
-    rock: true,       
-    spock: true,      
+    rock: true,
+    spock: true,
     scissors: false,
     lizard: false
   },
   scissors: {
-    paper: true,      
-    lizard: true,     
+    paper: true,
+    lizard: true,
     rock: false,
     spock: false
   },
   lizard: {
-    spock: true,      
-    paper: true,      
+    spock: true,
+    paper: true,
     rock: false,
     scissors: false
   },
   spock: {
-    scissors: true,   
-    rock: true,       
+    scissors: true,
+    rock: true,
     paper: false,
     lizard: false
   }
@@ -114,22 +114,24 @@ const pcPicked = () => {
 };
 
 const playPick = event => {
+  //lee el evento click
   userPlay = event.target.dataset.item;
+  if (!userPlay) return; //evitar que si hago click en un lugar donde no me interesa, no se ejecute nada
+  console.log(userPlay);
   console.log(`User picked: ${userPlay}`);
   userResultElement.className = `game-item ${userPlay}-result`;
 
   pcPicked();
 };
 
-
 //modo avanzado
 let advancedMode = false;
-if(document.getElementById('advanced-mode')){
+if (document.getElementById('advanced-mode')) {
   advancedMode = true;
   playOptions.push('lizard', 'spock');
   console.log('Advanced mode activated');
   console.log(playOptions);
-}else{
+} else {
   console.log('Simple mode deactivated');
   console.log(playOptions);
 }
